@@ -574,9 +574,31 @@
             </li>
           </ul>
         </div>
+
+        <form class="modal-footer">
+          <label for="footer-email" class="footer-label"> Subscribe </label>
+          <div class="footer-block">
+            <input
+              type="email"
+              id="footer-email"
+              name="footer-email"
+              class="email-input"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="subsc-button">
+              Subscribe
+              <span>
+                <svg class="subsc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-close-icon" width="8" height="8">
@@ -642,7 +664,7 @@
               id="accept"
               name="accept"
               value="accept"
-              class="radio-input"
+              class="radio-input visually-hidden"
               required
             />
             <label for="accept" class="check-button"
